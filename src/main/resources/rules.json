@@ -1,0 +1,198 @@
+{
+  "rules": [
+    {
+      "methods": ["POST"],
+      "pattern": "/comments",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "/activity-log",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },{
+      "methods": ["POST"],
+      "pattern": "/programs",
+      "roles": ["ACTIVE", "REQUESTED", "INACTIVE"]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/programs",
+      "roles": ["ACTIVE", "REQUESTED", "INACTIVE"]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/programs/*",
+      "roles": ["ACTIVE", "REQUESTED", "INACTIVE"]
+    },
+    {
+      "methods": ["PUT"],
+      "pattern": "/programs/*",
+      "roles": ["ACTIVE"]
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "/messages",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "/messages/**",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/messages/**",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/activities",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "/activities",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["DELETE"],
+      "pattern": "/programs/*",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/users",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/users/profile",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["PUT"],
+      "pattern": "/users/*",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["PUT"],
+      "pattern": "/users/**",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/users/*",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/users/**",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/users/***",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "user-has-categories",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/user-has-categories/**",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/get-id-by-name",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["DELETE"],
+      "pattern": "/user-has-categories/**",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "user-has-program",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "program-has-attributes",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "program-has-attributes/**",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "/subscriptions",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "/subscriptions/**",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/categories/**",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    }
+  ]
+}
